@@ -67,6 +67,9 @@ class CustomerCore extends ObjectModel
     /** @var string e-mail */
     public $email;
 
+    /** @var string phone */
+    public $phone;
+
     /** @var bool Newsletter subscription */
     public $newsletter;
 
@@ -175,7 +178,8 @@ class CustomerCore extends ObjectModel
             'secure_key' => array('type' => self::TYPE_STRING, 'validate' => 'isMd5', 'copy_post' => false),
             'lastname' => array('type' => self::TYPE_STRING, 'validate' => 'isName', 'required' => true, 'size' => 255),
             'firstname' => array('type' => self::TYPE_STRING, 'validate' => 'isName', 'required' => true, 'size' => 255),
-            'email' => array('type' => self::TYPE_STRING, 'validate' => 'isEmail', 'required' => true, 'size' => 255),
+            'email' => array('type' => self::TYPE_STRING, 'validate' => 'isEmail', 'required' => false, 'size' => 255),
+            'phone' => array('type' => self::TYPE_STRING, 'validate' => 'isPhone', 'required' => true, 'size' => 255),
             'passwd' => array('type' => self::TYPE_STRING, 'validate' => 'isPasswd', 'required' => true, 'size' => 255),
             'last_passwd_gen' => array('type' => self::TYPE_STRING, 'copy_post' => false),
             'id_gender' => array('type' => self::TYPE_INT, 'validate' => 'isUnsignedId'),
@@ -355,7 +359,7 @@ class CustomerCore extends ObjectModel
     public static function getCustomers($onlyActive = null)
     {
         return Db::getInstance(_PS_USE_SQL_SLAVE_)->executeS('
-            SELECT `id_customer`, `email`, `firstname`, `lastname`
+            SELECT `id_customer`, `email`, `phone`, `firstname`, `lastname`
             FROM `' . _DB_PREFIX_ . 'customer`
             WHERE 1 ' . Shop::addSqlRestriction(Shop::SHARE_CUSTOMER) .
             ($onlyActive ? ' AND `active` = 1' : '') . '
@@ -1105,6 +1109,7 @@ class CustomerCore extends ObjectModel
                 '{firstname}' => $this->firstname,
                 '{lastname}' => $this->lastname,
                 '{email}' => $this->email,
+                '{phone}' => $this->phone
             );
             Mail::Send(
                 (int) $idLang,

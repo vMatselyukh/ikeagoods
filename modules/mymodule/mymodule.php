@@ -151,7 +151,8 @@ class MyModule extends Module
             array(
                 'my_module_name' => Configuration::get('MYMODULE_NAME'),
                 'my_module_link' => $this->context->link->getModuleLink('mymodule', 'display'),
-                'my_module_message' => $this->l('This is a simple text message') // Do not forget to enclose your strings in the l() translation method
+                'my_module_message' => $this->l('This is a simple text message'), // Do not forget to enclose your strings in the l() translation method
+                'my_module_click_me_message' => $this->l('Click me!')
             )
         );
         return $this->display(__FILE__, 'mymodule.tpl');

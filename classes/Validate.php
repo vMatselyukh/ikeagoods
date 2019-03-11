@@ -51,6 +51,18 @@ class ValidateCore
     }
 
     /**
+     * Check for phone validity.
+     *
+     * @param string $phone to validate
+     *
+     * @return bool Validity is ok or not
+     */
+    public static function isPhone($phone)
+    {
+        return !empty($phone) && preg_match(Tools::cleanNonUnicodeSupport('([0-9]{12})'), $phone);
+    }
+
+    /**
      * Check for module URL validity.
      *
      * @param string $url module URL to validate

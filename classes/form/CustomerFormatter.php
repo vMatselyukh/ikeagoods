@@ -96,22 +96,22 @@ class CustomerFormatterCore implements FormFormatterInterface
             ->setType('hidden')
         ;
 
-        $genders = Gender::getGenders($this->language->id);
-        if ($genders->count() > 0) {
-            $genderField = (new FormField())
-                ->setName('id_gender')
-                ->setType('radio-buttons')
-                ->setLabel(
-                    $this->translator->trans(
-                        'Social title', [], 'Shop.Forms.Labels'
-                    )
-                )
-            ;
-            foreach ($genders as $gender) {
-                $genderField->addAvailableValue($gender->id, $gender->name);
-            }
-            $format[$genderField->getName()] = $genderField;
-        }
+        // $genders = Gender::getGenders($this->language->id);
+        // if ($genders->count() > 0) {
+        //     $genderField = (new FormField())
+        //         ->setName('id_gender')
+        //         ->setType('radio-buttons')
+        //         ->setLabel(
+        //             $this->translator->trans(
+        //                 'Social title', [], 'Shop.Forms.Labels'
+        //             )
+        //         )
+        //     ;
+        //     foreach ($genders as $gender) {
+        //         $genderField->addAvailableValue($gender->id, $gender->name);
+        //     }
+        //     $format[$genderField->getName()] = $genderField;
+        // }
 
         $format['firstname'] = (new FormField())
             ->setName('firstname')
@@ -149,6 +149,16 @@ class CustomerFormatterCore implements FormFormatterInterface
                 ));
         }
 
+        $format['phone'] = (new FormField())
+        ->setName('phone')
+        ->setType('phone')
+        ->setLabel(
+            $this->translator->trans(
+                'Phone', [], 'Shop.Forms.Labels'
+            )
+        )
+        ->setRequired(true);
+
         $format['email'] = (new FormField())
             ->setName('email')
             ->setType('email')
@@ -157,8 +167,7 @@ class CustomerFormatterCore implements FormFormatterInterface
                     'Email', [], 'Shop.Forms.Labels'
                 )
             )
-            ->setRequired(true)
-        ;
+            ->setRequired(false);
 
         if ($this->ask_for_password) {
             $format['password'] = (new FormField())
