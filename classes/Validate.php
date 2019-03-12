@@ -59,7 +59,7 @@ class ValidateCore
      */
     public static function isPhone($phone)
     {
-        return !empty($phone) && preg_match(Tools::cleanNonUnicodeSupport('([0-9]{12})'), $phone);
+        return !empty($phone) && preg_match('/(\+38-\(0(\d{2})\)-(\d{3})-(\d{4}))/', $phone);
     }
 
     /**

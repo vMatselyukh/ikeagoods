@@ -157,7 +157,10 @@ class CustomerFormatterCore implements FormFormatterInterface
                 'Phone', [], 'Shop.Forms.Labels'
             )
         )
+        ->addAvailableValue('placeholder', '+38-(0XX)-XXX-XXXX')
+        ->setMaxLength(18)
         ->setRequired(true);
+
 
         $format['email'] = (new FormField())
             ->setName('email')

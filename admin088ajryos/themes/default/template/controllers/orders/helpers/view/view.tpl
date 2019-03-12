@@ -582,6 +582,7 @@
                 {$gender->name|escape:'html':'UTF-8'}
                 {$customer->firstname}
                 {$customer->lastname}
+                {$customer->phone}
               </a>
             </span>
             <span class="badge">

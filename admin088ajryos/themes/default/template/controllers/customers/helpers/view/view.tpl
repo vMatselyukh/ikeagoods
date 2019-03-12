@@ -49,6 +49,18 @@
 				</div>
 				<div class="form-horizontal">
 					<div class="row">
+						<label class="control-label col-lg-3">{l s='Phone' d='Admin.Global'}</label>
+						<div class="col-lg-9">
+							<p class="form-control-static">{if $customer->phone}{$customer->phone}{else}{l s='Unknown' d='Admin.Orderscustomers.Feature'}{/if}</p>
+						</div>
+					</div>
+					<div class="row">
+						<label class="control-label col-lg-3">{l s='Email' d='Admin.Global'}</label>
+						<div class="col-lg-9">
+							<p class="form-control-static">{if $customer->email}{$customer->email}{else}{l s='Unknown' d='Admin.Orderscustomers.Feature'}{/if}</p>
+						</div>
+					</div>
+					<div class="row">
 						<label class="control-label col-lg-3">{l s='Social Title' d='Admin.Global'}</label>
 						<div class="col-lg-9">
 							<p class="form-control-static">{if $gender->name}{$gender->name}{else}{l s='Unknown' d='Admin.Orderscustomers.Feature'}{/if}</p>
