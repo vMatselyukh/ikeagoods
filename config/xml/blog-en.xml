@@ -6,6 +6,30 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Dropshipping, tips and advice to create your ecommerce website without stock</title>
+    <link>https://www.prestashop.com/en/blog/dropshipping-tips-and-advice-website-without-stock</link>
+    <description>In very simple terms, “Dropshipping” is a business strategy in which an online store owner does not keep goods in stock but helps retailers or customers to access goods directly from the manufactur</description>
+     <pubDate>Fri, 15 Mar 2019 11:50:32 +0100</pubDate>
+ <dc:creator>Invertus EN</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/dropshipping-tips-and-advice-website-without-stock</guid>
+  </item>
+  <item>
+    <title>How to promote your PrestaShop store using domain names</title>
+    <link>https://www.prestashop.com/en/blog/promote-prestashop-store-using-domain-names</link>
+    <description>To become a seasoned marketer and successful store owner, you need to promote your PrestaShop store in a way that attracts quality traffic.</description>
+     <pubDate>Wed, 06 Mar 2019 16:06:20 +0100</pubDate>
+ <dc:creator>store</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/promote-prestashop-store-using-domain-names</guid>
+  </item>
+  <item>
+    <title>Here’s Why You Should Prioritize Your Product and Category Texts</title>
+    <link>https://www.prestashop.com/en/blog/prioritize-your-product-and-category-texts</link>
+    <description>Link building, outreach, UX, Google Ads, and much more. These are all important aspects you need to focus on if you want to outdo your competition and be alone at the top.</description>
+     <pubDate>Wed, 06 Mar 2019 15:07:15 +0100</pubDate>
+ <dc:creator>bulldesign</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/prioritize-your-product-and-category-texts</guid>
+  </item>
+  <item>
     <title>End of life for PHP 5.6: make sure your PrestaShop store is secure!</title>
     <link>https://www.prestashop.com/en/blog/php-5-6-online-store-security</link>
     <description>Since the end of 2018, PHP versions earlier than 5.6 are no longer supported by the community.</description>
@@ -60,31 +84,6 @@
      <pubDate>Mon, 03 Dec 2018 14:42:37 +0100</pubDate>
  <dc:creator>Coingate</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/bitcoin-blockchain-cryptocurrency-gateway</guid>
-  </item>
-  <item>
-    <title>Meet Aleksandr, Ambassador of the month | November 2018</title>
-    <link>https://www.prestashop.com/en/blog/ambassador-estonia-aleksandr</link>
-    <description>This month meet Aleksandr, PrestaShop Ambassador in Talinn, Estonia!</description>
-     <pubDate>Fri, 30 Nov 2018 17:39:33 +0100</pubDate>
- <dc:creator>MLNielsen</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/ambassador-estonia-aleksandr</guid>
-  </item>
-  <item>
-    <title>Prepare your Google Ads campaigns for Black Friday and Cyber Monday</title>
-    <link>https://www.prestashop.com/en/blog/prepare-your-google-ads-campaigns-for-bf-and-cm</link>
-    <description>Black Friday and Cyber Monday is about to come and it will bring a lot of conversions for your stores!</description>
-     <pubDate>Wed, 07 Nov 2018 11:27:19 +0100</pubDate>
- <dc:creator>prestashop-partners</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/prepare-your-google-ads-campaigns-for-bf-and-cm</guid>
-  </item>
-  <item>
-    <title>Create the ERP software your business needs with PrestaShop ERP by Boost My Shop</title>
-    <link>https://www.prestashop.com/en/blog/what-is-an-erp</link>
-    <description>What is an ERP ?
-ERP is a central tool in the Enterprise Information System. This management software is synonymous with performance, cost optimization and resources.</description>
-     <pubDate>Wed, 31 Oct 2018 17:28:48 +0100</pubDate>
- <dc:creator>prestashop-partners</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/what-is-an-erp</guid>
   </item>
   </channel>
 </rss>
