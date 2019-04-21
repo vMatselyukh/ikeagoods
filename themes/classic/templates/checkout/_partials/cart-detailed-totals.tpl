@@ -53,7 +53,7 @@
 
   <div class="card-block">
     <div class="cart-summary-line cart-total">
-      <span class="label">{$cart.totals.total.label} {$cart.labels.tax_short}</span>
+      <span class="label">{$cart.totals.total.label}</span>
       <span class="value">{$cart.totals.total.value}</span>
     </div>
 

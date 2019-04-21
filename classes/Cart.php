@@ -3226,8 +3226,15 @@ class CartCore extends ObjectModel
                 continue;
             }
 
-            $_total_shipping['with_tax'] += $delivery_option_list[$id_address][$key]['total_price_with_tax'];
-            $_total_shipping['without_tax'] += $delivery_option_list[$id_address][$key]['total_price_without_tax'];
+            if($delivery_option_list[$id_address][$key]['total_price_with_tax'] > 0)
+            {
+                $_total_shipping['with_tax'] += $delivery_option_list[$id_address][$key]['total_price_with_tax'];
+            }
+            
+            if($delivery_option_list[$id_address][$key]['total_price_without_tax'] > 0)
+            {
+                $_total_shipping['without_tax'] += $delivery_option_list[$id_address][$key]['total_price_without_tax'];
+            }
         }
 
         return ($use_tax) ? $_total_shipping['with_tax'] : $_total_shipping['without_tax'];
