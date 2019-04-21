@@ -363,14 +363,15 @@ class CartPresenter implements PresenterInterface
         } else {
             $shippingCost = 0;
         }
-        $subtotals['shipping'] = array(
-            'type' => 'shipping',
-            'label' => $this->translator->trans('Shipping', array(), 'Shop.Theme.Checkout'),
-            'amount' => $shippingCost,
-            'value' => $shippingCost != 0
-                ? $this->priceFormatter->format($shippingCost)
-                : $this->translator->trans('Free', array(), 'Shop.Theme.Checkout'),
-        );
+        // $subtotals['shipping'] = array(
+        //     'type' => 'shipping',
+        //     'label' => $this->translator->trans('Shipping', array(), 'Shop.Theme.Checkout'),
+        //     'amount' => $shippingCost,
+        //     // 'value' => $shippingCost != 0
+        //     //     ? $this->priceFormatter->format($shippingCost)
+        //     //     : $this->translator->trans('Free', array(), 'Shop.Theme.Checkout'),
+        //     'value' => "",
+        // );
 
         $subtotals['tax'] = null;
         if (Configuration::get('PS_TAX_DISPLAY')) {
