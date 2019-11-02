@@ -22,6 +22,16 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+
+ <style>
+  footer .developer{
+    color: darkgrey;
+  }
+
+  footer .developer:hover{
+    color: lightgrey;
+  }
+ </style>
 <div class="container">
   <div class="row">
     {block name='hook_footer_before'}
@@ -49,6 +59,8 @@
               {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
             </a>
           {/block}
+          <br/>
+          <span>{l s='Development' d='Shop.Theme.Global'} <a href="https://matseliukh.com" target="_blank" name="Developer" title="Developer" class="developer">matseliukh.com</a></span>
         </p>
       </div>
     </div>
